@@ -8,14 +8,14 @@ import { clientSideFunction } from "@/utils/client-utils";
 
 export default function ServerRoutePage() {
   console.log("server route rendered");
-  const result = clientSideFunction();
+  // const result = clientSideFunction(); // an error
   const settings = {
     dots: true,
   };
   return (
     <div>
       <ImageSlider />
-      <p>{result}</p>
+      {/*<p>{result}</p>*/}
     </div>
   );
 }
